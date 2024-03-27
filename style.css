@@ -1,0 +1,87 @@
+body {
+    background-image: url('orangebg.png');
+    background-repeat: repeat;
+    background-size: 50px 50px; /* Adjust size as needed */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 165, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.header-background {
+    background-color: #ffffff; /* Orange background */
+    padding: 10px; /* Add some padding around the text */
+    color: #f68f00; /* White text color */
+    border-radius: 5px; /* Optional: rounded corners */
+    border: 2px solid black;
+}
+
+header h1 {
+    background-color: #FFA500; /* Orange background */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    justify-content: center;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin-top: 20px;
+}
+
+input {
+    width: calc(100% - 40px); /* Adjust for padding and submit button */
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px -10px rgb(38, 57, 77);
+    box-sizing: border-box;
+}
+
+#submit-icon {
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.images-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images-section img {
+    max-width: 50%;
+    height: auto;
+}
